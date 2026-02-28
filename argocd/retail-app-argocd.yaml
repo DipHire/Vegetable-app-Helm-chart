@@ -18,12 +18,12 @@ spec:
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: murali-ns 
+    namespace: dip-ns 
 
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
     syncOptions:
-      - CreateNamespace=true # This option allows Argo CD to create the target namespace if it does not already exist. In this case, if the "murali-ns" namespace does not exist, Argo CD will create it automatically during the synchronization process.
+      - CreateNamespace=true # This option allows Argo CD to create the target namespace if it does not already exist. In this case, if the "dip-ns" namespace does not exist, Argo CD will create it automatically during the synchronization process.
 
