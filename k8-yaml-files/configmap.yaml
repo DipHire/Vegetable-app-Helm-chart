@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: configmap
-  namespace: vasist-ns
+  namespace: dip-ns
 data:
   MONGODB_URI: "mongodb://mongodb:27017/vegetable_order_app"
   PORT: "3000"
